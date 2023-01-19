@@ -89,10 +89,10 @@ SELECT SUM(transactions.sales_amount) FROM transactions INNER JOIN date ON trans
 = Table.AddColumn(#"Filtered Rows", "norm_amount", each if [currency] = "USD" or [currency] ="USD#(cr)" then [sales_amount]*82 else [sales_amount], type any)
 
 ## Data Visualization 🖼
-* Dashboard 1:
+* **Dashboard 1:**
 ![Dashboard_1](https://raw.githubusercontent.com/devschow/Sales-Insights-Data-Analysis/main/Dashboard_1.jpg)
 
-* Dashboard 2:
+* **Dashboard 2:**
 ![Dashboard_2](https://raw.githubusercontent.com/devschow/Sales-Insights-Data-Analysis/main/Dashboard_2.jpg)
 
 The dashboard displays all the key sales-related data, including 
